@@ -1,14 +1,12 @@
 {
   "name": "filesize.macro",
   "description": "Calculate filesize at build time",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/filesize.macro.js",
   "license": "MIT",
   "files": ["dist/"],
   "keywords": [
-    "webpack",
     "filesize",
-    "string",
     "babel",
     "babel-macros",
     "babel-plugin-macros"
