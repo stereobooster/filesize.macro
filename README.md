@@ -11,7 +11,7 @@ Similar to nodejs `require` call:
 ```js
 import filesize from "filesize.macro";
 
-const preview = filesize("./image.jpg");
+const size = filesize("./image.jpg");
 ```
 
 ### Example of usage in create-react-app
@@ -19,17 +19,11 @@ const preview = filesize("./image.jpg");
 ```js
 import coverImage from "./cover-image.jpg";
 import filesize from "filesize.macro";
-const coverfilesize = filesize("./cover-image.jpg");
+const coverSize = filesize("./cover-image.jpg");
 
 const SomeComponent = () => (
-  <div
-    style={{
-      backgroundImage: `url(${coverfilesize}`,
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-    }}
-  >
-    <img src={coverImage} alt="" width="100%" height="100%" />
+  <div>
+    <a href={coverImage}>{`Image size ${coverSize} in bytes`}</a>
   </div>
 );
 ```
