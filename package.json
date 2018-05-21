@@ -1,14 +1,13 @@
 {
-  "name": "lqip.macro",
-  "description": "Cretes LQIP at build time, similar to webpack lqip-loader",
-  "version": "0.1.5",
-  "main": "dist/lqip.macro.js",
+  "name": "filesize.macro",
+  "description": "Calculate filesize at build time",
+  "version": "0.1.0",
+  "main": "dist/filesize.macro.js",
   "license": "MIT",
   "files": ["dist/"],
   "keywords": [
     "webpack",
-    "lqip-loader",
-    "lqip",
+    "filesize",
     "string",
     "babel",
     "babel-macros",
@@ -16,19 +15,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stereobooster/lqip.macro.git"
+    "url": "git+https://github.com/stereobooster/filesize.macro.git"
   },
   "scripts": {
     "test": "jest --coverage",
     "format": "prettier --write",
     "ci": "npm run test -- --ci && npm run build",
     "prepare": "npm run build",
-    "build": "microbundle -i src/index.js -o dist && cp src/lqip.js dist/lqip.js",
+    "build": "microbundle -i src/index.js -o dist",
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "babel-plugin-macros": "^2.2.1",
-    "lqip": "^2.0.2"
+    "babel-plugin-macros": "^2.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

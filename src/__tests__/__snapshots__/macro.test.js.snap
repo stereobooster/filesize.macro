@@ -2,21 +2,20 @@
 
 exports[`macros correct usage: correct usage 1`] = `
 "
-import lqip from '../macro';
+import filesize from '../macro';
 
-const preview = lqip('./fixtures/jonathan-daniels-416786-unsplash.jpg');
+const preview = filesize('./fixtures/jonathan-daniels-416786-unsplash.jpg');
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-const preview =
-  \\"data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwYH/8QAKBAAAQMDAgMJAAAAAAAAAAAAAQIDBAAFBhESBzGxITQ2QUJRcnOB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIRIf/aAAwDAQACEQMRAD8AgeGcWw3B59jKDJXu0bjMtqKE7iFHcpQ1I00AHYefKhzrDLljhbkJadds0pZMR8kDePZQ9KgPL9FPN71H+Q6itavvg23/AGjoul8ohSnOH//Z\\";
+const preview = 709289;
 
 "
 `;
 
 exports[`macros no usage: no usage 1`] = `
 "
-import lqip from '../macro'
+import filesize from '../macro'
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
